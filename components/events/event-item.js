@@ -6,7 +6,7 @@ import ArrowRightIcon from "../icons/arrow-right-icon";
 import classes from "./event-item.module.css";
 
 function EventItem(props) {
-  const { key, title, image, date, location, id } = props;
+  const { title, image, date, location, id } = props;
 
   const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
@@ -17,7 +17,7 @@ function EventItem(props) {
   const exploreLink = `/events/${id}`;
 
   return (
-    <li key={key} className={classes.item}>
+    <li key={id} className={classes.item}>
       <img src={"/" + image} alt={title} />
       <div className={classes.content}>
         <div className={classes.summary}>
