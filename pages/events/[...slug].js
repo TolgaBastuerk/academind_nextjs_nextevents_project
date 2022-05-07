@@ -1,8 +1,7 @@
 function FilteredEventsPage() {
   return (
     <div>
-      {" "}
-      <h1>The filtered Events Page.</h1>
+      <h1>Filtered Events</h1>
     </div>
   );
 }
